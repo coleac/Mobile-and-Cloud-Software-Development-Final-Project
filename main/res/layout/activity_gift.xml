@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    tools:context="com.example.aaloncole.finalproject.GiftActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/linearLayout1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/linearLayout2">
+
+            <TextView
+                android:text="Recipient:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1"
+                android:textSize="20sp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:inputType="text"
+                android:ems="10"
+                android:id="@+id/recipient_input"
+                android:layout_weight="1.71" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/linearLayout3">
+
+            <TextView
+                android:text="Gift:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:textSize="20sp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:inputType="text"
+                android:ems="15"
+                android:id="@+id/gift_input"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/linearLayout8">
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Price:$"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/price_input"
+                    android:layout_width="85dp"
+                    android:layout_height="match_parent"
+                    android:ems="20"
+                    android:inputType="text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/linearLayout5">
+
+                <TextView
+                    android:text="Giftwrapped?:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView4"
+                    android:layout_weight="1"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/giftwrapped_input"
+                    android:layout_width="95dp"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:inputType="text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:id="@+id/linearLayout6">
+
+                <TextView
+                    android:text="Id:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView5"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="none"
+                    android:ems="10"
+                    android:id="@+id/id_input"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/add_gift_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add New Gift"
+        android:layout_below="@+id/linearLayout1"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/linearLayout7"
+        android:layout_below="@+id/add_gift_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/delete_gift_button"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:text="Delete Gift" />
+
+        <Button
+            android:id="@+id/clear_button"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginEnd="30dp"
+            android:text="Clear Fields" />
+
+        <Button
+            android:id="@+id/edit_gift_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Edit Gift" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/get_list_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Retrieve/Update Gift List"
+        android:layout_below="@+id/linearLayout7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/santa_list"
+        android:layout_below="@+id/get_list_button"/>
+
+</RelativeLayout>
+

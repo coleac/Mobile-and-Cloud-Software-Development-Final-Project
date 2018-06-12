@@ -4,6 +4,8 @@
 ### Mobile App Installation
   * app-release.apk (For testing and review only.)
     * Must configure Settings to allow the installation of apps from unknown sources
+  * Video of functionality
+    * https://media.oregonstate.edu/media/t/0_14ieb2om
     
 ____
 #### Mobile Android Interface
